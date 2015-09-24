@@ -12,3 +12,7 @@ case LaTeX, because I learned my lesson about raw TeX a while ago.)
 
 I stole tscv.sty, as attributed in its comments.  It works for me.  I can't
 remember if I edited it.
+
+Finally, if you're poking around github repositories, please note that I'm not
+actually looking for a job.  I just have possibly source code I want to make
+world-readable.
