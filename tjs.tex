@@ -1,0 +1,139 @@
+% tjs.tex, based on resume.tex and tucv.sty
+% Tim Showalter
+%
+% (c) 2002 Matthew Boedicker <mboedick@mboedick.org> (original author) http://mboedick.org
+% (c) 2003-2007 David J. Grant <davidgrant-at-gmail.com> http://www.davidgrant.ca
+% (c) 2007-2010 Todd C. Miller <Todd.Miller@courtesan.com> http://www.courtesan.com/todd
+%
+% This work is licensed under the Creative Commons Attribution-ShareAlike 3.0 Unported License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/3.0/ or send a letter to Creative Commons, 171 Second Street, Suite 300, San Francisco, California, 94105, USA.
+\documentclass[letterpaper,12pt,twoside]{article}
+%\usepackage{fullpage}
+\usepackage[pagesetup]{tscv}
+\fancyfoot[RE]{Tim Showalter}
+%\fancyfoot[R]{\thepage}
+
+\raggedbottom
+\raggedright
+
+% Adjust margins to 0.5in on all sides
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.0in}
+\addtolength{\topmargin}{-0.5in}
+\addtolength{\textheight}{0.5in}
+
+\begin{document}
+
+\begin{tabular*}{7.5in}{l@{\extracolsep{\fill}}r}
+  {\Large \textbf{Tim Showalter}} & \\
+  36346 Haley Street &  +1 408 480 2876 \\
+  Newark, CA 94560 & tjs@psaux.com
+\end{tabular*}
+
+\vspace{6pt}
+
+\hrule
+\resheading{Summary}
+\vspace{6pt}
+Programmer with 17 years of experience in the design, implementation,
+deployment, and optimization of network applications
+
+\resheading{Experience}
+\resemployer{LinkedIn Corporation}{Mountain View,~CA}
+\resjob{Senior Software Engineer}{February~2012}{present}
+\vspace{-11pt}
+\begin{itemize}
+  \item Member of montetization team, working on Jobs product
+  \item Designed, implemented, and maintained back-end and front-end
+    portions of features for monetization, recruiting platforms,
+    and SEO
+  \item Java and Groovy running mostly on Linux
+\end{itemize}
+
+\resemployer{Yahoo!, Inc.}{Sunnyvale,~CA}
+\resjob{Principal Technical Yahoo}{April~2011}{February~2012}
+\resjob{Senior Technical Yahoo}{April~2005}{April~2011}
+\vspace{-11pt}
+\begin{itemize}
+\item Designed, enhanced, and maintained proprietary POP and IMAP
+  servers, including
+  \begin{itemize}
+  \item optimizations that reduced capital and operating expenses
+    by millions of dollars
+  \item analysis of performance of new features before
+    implementation, saving capital expenses and guiding implementation
+  \item reduction of hundreds of server hosts and thousands of lines of code
+  \end{itemize}
+\item Developed system to automatically manage SSL certificates and
+  configuration on mail servers
+\item Implemented new POP client for retrieving mail from outside servers
+\item Implemented SOAP, REST, and JSON web service clients and servers
+\item Received 2011 ``Super Star'' internal award (key team member)
+\item Received two ``You Rock'' awards (lead or key team member)
+\item Platforms were FreeBSD and RHEL; languages were C++, Perl, and Java
+\end{itemize}
+
+\resemployer{Apptran Software}{Sunnyvale,~CA}
+\resjob{Senior Software Developer}{November~2003}{April~2005}
+\vspace{-11pt}
+\begin{itemize}
+\item Implemented SMTP client, SMTP server, IMAP client, and
+  MIME/RFC822 parsing and manipulation library
+\item Initial design and implementation of prototype server
+\item Development was on Red Hat Linux in C++ in an event-driven framework
+\end{itemize}
+
+\pagebreak
+
+\resemployer{Mirapoint,~Inc.}{Sunnyvale,~CA}
+\resjob{Member of Technical Staff}{May~1999}{November~2003}
+\vspace{-11pt}
+\begin{itemize}
+\item Enhanced and maintained mail store products including
+  IMAP, POP3, and SMTP servers and clients, including new features
+  and performance enhancements, for an email server appliance
+\item Added extensions to proprietary administration interface for new
+  features
+\item Developed software in C to run on Mirapoint’s proprietary
+  FreeBSD-derived OS
+\end{itemize}
+
+\resemployer{Carnegie Mellon University}{ Pittsburgh,~PA}
+\resjob{Research Systems Programmer}{ December~1996}{April~1999}
+\vspace{-11pt}
+\begin{itemize}
+\item Worked for the Andrew Systems Group of Computing Services in
+  support of campus computing environment
+\item Maintained the Cyrus IMAP daemon, a portable, black-box IMAP and
+  POP3 server
+\item Directly handled bug reports, packaging, community patches,
+  porting, and distribution
+\end{itemize}
+
+\resheading{Education}
+\resschool{Carnegie Mellon University}{Pittsburgh,~PA}
+\resdegree{B.S.}{Computer Science}{May 1998}
+
+\resheading{Skills}
+\vspace{-6pt}
+\begin{itemize}
+\item Expert in IMAP, POP3, SMTP protocols and RFC822 and MIME specifications
+\item Strong C++, C, Perl, and Unix skills; familiar with Java and
+  LISP; some experience with PHP, Python, SQL
+\item Strong skills with near-OS application optimization
+\item Developed applications for FreeBSD, Linux, Red Hat, Debian, Ubuntu
+\item Experience with DNS, HTML, HTTP, JSON, LDAP, NNTP
+\end{itemize}
+
+\resheading{Publications}
+\vspace{-6pt}
+\begin{itemize}
+\item {\sl IMAP4 ID Extension}, RFC 2971, October 2000
+\item {\sl Sieve: A Mail Filtering Language}, RFC 3028, January 2001
+\item with P. Guenther, {\sl Sieve: A Mail Filtering Language}, RFC
+  5228, January, 2008
+\item with N. Freed, RFC 5230, {\sl Sieve---Vacation Extension}, RFC
+  5230, January, 2008
+\end{itemize}
+
+\end{document}
