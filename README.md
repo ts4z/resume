@@ -11,7 +11,7 @@ I like the look, and the secret handshake, of a resume in TeX.  (Or in this
 case LaTeX, because I learned my lesson about raw TeX a while ago.)
 
 I stole tscv.sty, as attributed in its comments.  It works for me.  I can't
-remember if I edited it.
+remember if I edited it.  I got it from here: http://www.sudo.ws/todd/resume.html
 
 Finally, if you're poking around github repositories, please note that I'm not
 actually looking for a job.  I just have possibly source code I want to make
