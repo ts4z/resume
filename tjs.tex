@@ -9,14 +9,18 @@
 % Unported License. To view a copy of this license, visit
 % http://creativecommons.org/licenses/by-sa/3.0/ or send a letter to Creative
 % Commons, 171 Second Street, Suite 300, San Francisco, California, 94105, USA.
-\documentclass[letterpaper,12pt,twoside]{article}
-\usepackage{fullpage}
+\documentclass[letterpaper,11pt,twoside]{article}
+%\usepackage{fullpage}
 \usepackage[pagesetup]{tscv}
 \fancyfoot[RE]{Tim Showalter}
 %\fancyfoot[R]{\thepage}
 
-\raggedbottom
-\raggedright
+%% \raggedbottom
+%% \raggedright
+
+% this marks overfull hboxes with a black bar.
+% https://en.wikibooks.org/wiki/LaTeX/Errors_and_Warnings
+\overfullrule=2cm
 
 % Adjust margins to 0.5in on all sides
 \addtolength{\oddsidemargin}{-0.5in}
@@ -27,7 +31,7 @@
 
 \begin{document}
 
-\begin{tabular*}{7.5in}{l@{\extracolsep{\fill}}r}
+\begin{tabular*}{6.5in}{l@{\extracolsep{\fill}}r}
   {\Large \textbf{Tim Showalter}} & \\
   36346 Haley Street &  +1 408 480 2876 \\
   Newark, CA 94560 & tjs@psaux.com
@@ -37,24 +41,36 @@
 
 \hrule
 \resheading{Summary}
+Programmer 20+ years of in the design,
+deployment, and optimization of network applications
+
 \vspace{6pt}
-Programmer specializing in the design, implementation,
-and optimization of network applications
 
 \resheading{Experience}
-\resemployer{LinkedIn Corporation}{Mountain~View,~CA}
-\resjob{Staff Software Engineer}{November 2015}{present}
-\resjob{Senior Software Engineer}{February 2012}{October 2015}
-\vspace{-18pt}
+\resemployer{Opendoor}{San Francisco, CA}
+\resjob{Software Engineer}{February~2018}{}
+\vspace{-11pt}
 \begin{itemize}
-  \item Multi-colo multi-master Recruiter, LinkedIn's biggest product by revenue (patents pending)
-  \item Built this implementation to share with three other products
-  \item Improved job applicant experience with multiple partner
-    integrations (patents pending)
-  \item OLAP for job posting analytics that increased
-    data retention period $10\times$ (using LinkedIn's Pinot)
-  \item Designed, implemented, and maintained back-end and front-end features
-    for monetization, analytics, recruiting platforms; mostly Java, some Scala
+\item Member of Developer Experience team, working on improving developer productivity
+\item Maintained AWS infrastructure and Kubernetes clusters for production and big data workloads
+\item Selection and integration of open source tools like Jaeger and Istio
+\end{itemize}
+
+\resemployer{LinkedIn Corporation}{Sunnyvale,~CA}
+\resjob{Staff Software Engineer}{November~2015}{February~2018}
+\resjob{Senior Software Engineer}{February~2012}{October~2015}
+\vspace{-11pt}
+\begin{itemize}
+\item Member of Talent Solutions team working on Recruiter and Jobs products
+\item Key player scaling all monetiztation products to multiple data centers by providing
+  a DC-ownership model on top of existing datacenter-unaware applications
+\item Initial design and implementation of Easy Apply feature, dovetailing into existing solution
+\item Reviewed data models across the company for consistency and quality
+\item Org-wide reviewer for new designs via internal RFC (design doc) process
+\item Improved maintenance of Recruiter search back-end and improved its
+  ability to scale to more machine learning features
+\item Integrated anti-fraud measures for the Jobs product. 
+\item Java, Scala, and Groovy running mostly on Linux
 \end{itemize}
 
 \resemployer{Yahoo!, Inc.}{Sunnyvale,~CA}
@@ -83,12 +99,12 @@ and optimization of network applications
 \resjob{Senior Software Developer}{November~2003}{April~2005}
 \vspace{-18pt}
 \begin{itemize}
-\item Implemented SMTP client, SMTP server, IMAP client, and
-  MIME/RFC822 library
-\item Initial design and implementation of prototype server
+\item Implemented SMTP client/server, IMAP client, and
+  MIME/RFC822 parsing and manipulation library for prototype server
+\item Development was on Red Hat Linux in C++ in an event-driven framework
 \end{itemize}
 
-\pagebreak
+% \pagebreak
 
 \resemployer{Mirapoint,~Inc.}{Sunnyvale,~CA}
 \resjob{Member of Technical Staff}{May~1999}{November~2003}
@@ -103,9 +119,9 @@ and optimization of network applications
   FreeBSD-derived OS
 \end{itemize}
 
-\resemployer{Carnegie Mellon University}{ Pittsburgh,~PA}
-\resjob{Research Systems Programmer}{December~1996}{April~1999}
-\vspace{-18pt}
+\resemployer{Carnegie~Mellon~University}{Pittsburgh,~PA}
+\resjob{Research Systems Programmer}{ December~1996}{April~1999}
+\vspace{-11pt}
 \begin{itemize}
 \item Worked for the Andrew Systems Group of Computing Services in
   support of campus computing environment
@@ -116,16 +132,16 @@ and optimization of network applications
 \end{itemize}
 
 \resheading{Education}
-\resschool{Carnegie Mellon University}{Pittsburgh,~PA}
-\resdegree{B.S.}{Computer Science}{May~1998}
+\resschool{Carnegie~Mellon~University}{Pittsburgh,~PA}
+\resdegree{B.S.}{Computer Science}{May 1998}
 
 \resheading{Skills}
 \vspace{-6pt}
 \begin{itemize}
+\item Strong C++, Go, Java, C, Perl, and Unix skills; familiar JavaScript,
+  Scala, and LISP; some experience with Python and SQL
 \item Expert in IMAP, POP3, SMTP protocols and RFC822 and MIME specifications
-\item Strong Java, C++, C, Perl, and Unix skills; familiar with JavaScript,
-  Scala, and LISP; some experience with PHP, Python, SQL
-\item Strong skills with application optimization
+\item Strong skills with near-OS application optimization
 \item Asynchronous clients and servers in C, C++, Java, and Scala
 \item Developed applications for FreeBSD, Linux, Red Hat, Debian, Ubuntu
 \item Experience with DNS, HTML, HTTP, JSON, LDAP, NNTP
