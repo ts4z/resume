@@ -54,13 +54,15 @@
 }
 \ProcessOptions
 \definecolor{tucvheading}{gray}{0.85}
-\NewDocumentCommand\resheading{m}{\vspace{12pt}
-  {\large %\colorbox{tucvheading}{
-      \begin{minipage}
-    {\textwidth-6.0pt}{\textbf{#1 \vphantom{p\^{E}}}}
-\end{minipage}}
-\vspace{3pt}
-} %}
+
+\NewDocumentCommand\resheading{m}{\vspace{8pt}
+  {\large 
+    \begin{minipage}
+      {\textwidth-6.0pt}{\textbf{#1 \vphantom{p\^{E}}}}
+  \end{minipage}}
+  \vspace{1pt}
+}
+
 \NewDocumentCommand\resentry{O{0pt}mm}{
     \begin{tabular*}{\textwidth}[t]{
         @{\hspace{#1}}
